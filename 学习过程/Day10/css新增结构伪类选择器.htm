@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: block;
+        }
+        /* div里面第。。。。个且标签是。。。。的孩子（两个条件都得满足） */
+        /* div里面第一个且标签是span的孩子 */
+        div span:first-child {
+            color: red;
+        }
+
+        /* div里面第2个标签且是span的孩子 */
+        div span:nth-child(2) {
+            color: blue;
+        }
+
+        /* div里面最后一个标签且是span的孩子 */
+        div span:last-child {
+            color: yellow;
+        }
+
+        /* ul里面第偶数个且标签是li的孩子(even和2n效果一样) */
+        ul li:nth-child(2n) {
+            color: brown;
+        }
+
+        /* ul里面第奇数个且标签是li的孩子（odd和2n-1效果一样） */
+         ul li:nth-child(2n-1) {
+             color: skyblue;
+         }
+
+         /* ul里面第4个开始后面且标签是li的孩子（包括第四个） */
+         ol li:nth-child(n+4) {
+             color: gray;
+         }
+
+         /* ul里面第3个之前且所有的标签为li孩子(包括第三个) */
+         ol li:nth-child(-n+3) {
+             color: green;
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>小鞠女神</p>
+        <span>小鞠女神（第一个孩子为span标签）</span>
+        <span>小鞠女神（第2个孩子为span的标签）</span>
+        <span>小鞠女神</span>
+        <span>小鞠女神（最后一个孩子为span的标签）</span>
+        <p>小鞠女神</p>
+    </div>
+
+    <ul>
+        <li>小鞠女神（奇数）</li>
+        <li>小鞠女神（偶数）</li>
+        <li>小鞠女神（奇数）</li>
+        <li>小鞠女神（偶数）</li>
+        <li>小鞠女神（奇数）</li>
+        <li>小鞠女神（偶数）</li>
+    </ul>
+
+    <ol>
+        <li>小鞠女神（前三个）</li>
+        <li>小鞠女神（前三个）</li>
+        <li>小鞠女神（前三个)</li>
+        <li>小鞠女神（第四个开始）</li>
+        <li>小鞠女神（第四个开始）</li>
+        <li>小鞠女神（第四个开始）</li>
+    </ol>
+</body>
+</html>

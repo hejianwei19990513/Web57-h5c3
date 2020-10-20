@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动(给父元素添加overflow)</title>
+    <style>
+
+.two {
+            /* 没设置高度height */
+            width: 1900px;
+            /* 在父元素style标签里面添加overflow：hidden */
+            overflow:hidden;
+            background-color: blue;
+        }
+        .o {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .t {
+            width: 1900px;
+            height: 300px;
+            border: 2px solid red;
+            background-color:red ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="two">
+        <div class="o">浮动盒子1</div>
+        <div class="o">浮动盒子2</div>
+        <div class="o">浮动盒子3</div>
+    </div>
+    <div class="t">标准盒子</div>
+</body>
+
+</html>

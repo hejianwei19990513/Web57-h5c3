@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌套块元素垂直外边距的塌陷</title>
+    <style>
+        div {
+            width: 800px;
+            height: 600px;
+            background: blue;
+            margin-top: 100px;
+            /* 给父元素div添加边框可以使子代与父代分开 */
+            /* border: 1px solid transparent; */
+
+            /* 给父元素div添加padding也可以使子代与父代分开 */
+            /* padding: 1px; */
+            
+            /* 给父元素div添加overflow: hidden也可以使子代与父代分开 */
+            /* overflow: hidden; */
+
+            }
+        .one {
+            width: 400px;
+            height: 300px;
+            background: red;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="one"></div>
+    </div>
+
+
+</body>
+
+</html>

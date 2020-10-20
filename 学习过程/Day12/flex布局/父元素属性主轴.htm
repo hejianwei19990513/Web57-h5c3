@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 user-scalable=0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 600px;
+            background-color: pink;
+
+            /* 设置主轴方向，默认值是row(x轴从左到右),其他值有row-reverse(x轴从右到左4321)、 column(y轴从上到下)、column（y轴从下到上） */
+            flex-direction: row;
+
+            /* 设置主轴子元素的排列方式 flex-star(主轴为x轴时，头部排列从左到右12345）,flex-end(主轴为x轴时，尾部排列从左到右12345）,center（主轴居中对齐）,space-around（平分剩余空间）,space-between（先两边贴边，然后再评分剩余空间）*/
+            justify-content: space-between;
+            
+            /* 设置换行，默认值是不换行no-wrap,如果不换行，会自动改变盒子大小从而达到在一行的效果 */
+            flex-wrap: wrap;
+        }
+        div span {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+</body>
+</html>

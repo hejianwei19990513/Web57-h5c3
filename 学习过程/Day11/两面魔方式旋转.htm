@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            margin: 5px;
+            perspective: 800px;
+        }
+        .box {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            
+        }
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        .front {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            transform: translateZ(25px);
+            background-color: pink;
+            z-index: 1;
+        }
+        .buttom {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            transform: rotateX(-90deg) translateZ(25px);
+            background-color: purple;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front"></div>
+                <div class="buttom"></div>
+            </div>
+        </li>
+        <li><div class="box">
+            <div class="front"></div>
+            <div class="buttom"></div>
+        </div></li>
+        <li><div class="box">
+            <div class="front"></div>
+            <div class="buttom"></div>
+        </div></li>
+        <li><div class="box">
+            <div class="front"></div>
+            <div class="buttom"></div>
+        </div></li>
+        <li><div class="box">
+            <div class="front"></div>
+            <div class="buttom"></div>
+        </div></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid pink;
+            position: relative;
+            margin: 200px 0;
+            left: 50%;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: red;
+            transform: translate(-50%,-50%);
+        }
+        .box div[class^=spread] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 1px red;
+            transform: translate(-50%,-50%);
+        }
+        .spread1 {
+            animation: move 0.5s linear infinite;
+        }
+        .spread2 {
+            animation: move 1.5s linear infinite;
+        }
+        @keyframes move {
+            60% {
+                width: 30px;
+                height: 30px;
+
+                /* opacity透明度 */
+                opacity: 1;
+            }
+            100% {
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="center"></div>
+        <div class="spread1"></div>
+        <div class="spread2"></div>
+    </div>
+</body>
+
+</html>

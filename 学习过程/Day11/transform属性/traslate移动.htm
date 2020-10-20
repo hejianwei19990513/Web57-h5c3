@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+           width: 200px;
+           height: 200px;
+           background-color: pink;
+
+            /* 相对于自己本身盒子的移动 */
+           /* transform: translate(100px,100px); */
+
+            /* 相对于自己本身盒子属性百分比移动(这里是200*50%=100px) */
+            transform: translate(50%,50%);
+        }
+        .center {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+
+            
+            top: 50%;
+            left: 50%;
+            /* margin-top: -100px;
+            margin-left: -100px; */
+
+            /* 垂直居中，等价于上面的margin top和left */
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+        <div></div>
+        <div class="center"></div>
+</body>
+</html>

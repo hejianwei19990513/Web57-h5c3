@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            perspective: 500px;
+        }
+        .box {
+            width: 800px;
+            height: 200px;
+            position: relative;
+            margin: 200px auto;
+            border: 1px solid pink;
+
+            /* perspective: 800px; */
+            /* 只要关于Z轴的，就必须写这个属性，不然只会显示2D效果 */
+            transform-style: preserve-3d;
+
+            animation: move 5s linear infinite;
+        }
+        /* @keyframes move {
+            100% {
+                transform: rotateY(360deg);
+            }
+        } */
+        .box:hover {
+            animation-play-state: paused;
+        }
+        .box div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 300px;
+        }
+        .box div img {
+            width: 100%;
+            height: 100%;
+        }
+       
+        .pic1 {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        .pic2 {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        .pic3 {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        .pic4 {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        .pic5 {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+        .pic6 {
+            transform: rotateY(360deg) translateZ(300px);
+        } 
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="center"><img src="../../Day03（选择器表格基础属性）/女神剧照（作业）/漂亮书生/漂亮书生3.jpg" alt=""></div>
+        <div class="pic1"><img src="../../../红衣女神.jpg" alt=""></div>
+        <div class="pic2"><img src="../../Day03（选择器表格基础属性）/女神剧照（作业）/新白娘子传奇/新白娘子传奇1.jpg" alt=""></div>
+        <div class="pic3"><img src="../../Day03（选择器表格基础属性）/女神剧照（作业）/新白娘子传奇/新白娘子传奇2.jpg" alt=""></div>
+        <div class="pic4"><img src="../../Day03（选择器表格基础属性）/女神剧照（作业）/新白娘子传奇/新白娘子传奇3.jpg" alt=""></div>
+        <div class="pic5"><img src="../../Day03（选择器表格基础属性）/女神剧照（作业）/新白娘子传奇/新白娘子传奇4.jpg" alt=""></div>
+        <div class="pic6"><img src="../../../jjy.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>

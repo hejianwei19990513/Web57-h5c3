@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 200px;
+            height: 300px;
+            background-color: red;
+
+            /* 相对定位，相对于自己本身属性（包括margin的外间距）定位之前，移动以自身为参照物需要移动的距离,移动后仍然占有之前的位置 */
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .two {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 640px;
+    min-width: 320px;
+    color: #666;
+    margin: 0 auto;
+    background-color: white;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.app div {
+    float: left;
+}
+.app {
+    width: 100%;
+    height: 45px;
+    background-color: #333333;
+}
+.app div:first-child {
+    width: 8%;
+    text-align: center;
+    line-height: 45px;
+}
+.app div:first-child img {
+    vertical-align: middle;
+}
+.app div:nth-child(2) {
+    width: 10%;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+.app div:nth-child(2) img {
+    vertical-align: middle;
+}
+.app div:nth-child(3) {
+    width: 57%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+}
+.app div:last-child {
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    background-color: #f63515;
+}
+.search {
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    height: 44px;
+}
+.search div {
+    float: left;
+}
+.search-l {
+    width: 40px;
+    height: 44px;
+}
+.search-l img {
+    margin-left: 15px;
+    margin-top: 14px;
+}
+.search-m {
+    width: 540px;
+    height: 30px;
+    margin: 7px 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.search-m .pic-jd {
+    width: 20px;
+    height: 15px;
+    margin-left: 13px;
+    margin-top: 7px;
+} 
+.pic-jd::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top:15px;
+    left: 90px;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+.pic {
+    width: 18px;
+    height: 15px;
+    margin-top: 8px;
+    margin-left: 16px;
+    background: url(../images/jd-sprites.png) no-repeat -82px 0px;
+    background-size: 200px;
+}
+.search-r {
+    float: right;
+    width: 40px;
+    height: 44px;
+    color: white;
+    line-height: 44px;
+}
+.focus img {
+    width: 100%;
+    vertical-align: middle;
+}
+.list_items div[class^=pic] img {
+    float: left;
+    width: 33.33%;
+}
+.nav {
+    width: 100%;
+    height: 162px;
+    background-color: #cccccc;
+    overflow: hidden;
+}
+.nav a {
+    float: left;
+    width: 20%;
+    height: 81px;
+    text-align: center;
+    text-decoration: none;
+    color: #666666;
+
+}
+.nav a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
+.nav span {
+    display: block;
+    margin-left: 0px;
+    margin-top: -5px;
+}
+.act {
+    margin-top: 10px;
+}
+.act a {
+    float: left;
+}
+.act a img {
+    vertical-align: middle;
+}
+.act a:first-child {
+    width: 50%;
+}
+.act a:first-child img {
+    width: 100%;
+}
+.act a:not(:nth-child(1)) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+.act a:not(:nth-child(1)) img {
+    width: 100%;
+}

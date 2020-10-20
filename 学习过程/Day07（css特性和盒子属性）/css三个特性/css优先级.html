@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级（可以理解成选定的标签越具体优先级越高）</title>
+    <style>
+        /* !imprtant最权大 */
+        div {color: seagreen!important;}
+        /* 行内样式style=""第二（在body里面div标签加style） */
+        /* id选择器第三 */
+        #one {color: blueviolet;}
+        /* 类选择器和伪类选择器第四 */
+        .two {color: yellow;}
+        /* 元素选择器 */
+        div {color: red;}
+        /* 通配符选择器最低 */
+        * {color: pink;}
+
+    </style>
+</head>
+<body>
+    <div class="two" id="one"  >
+        小鞠女神
+    </div>
+    
+    
+</body>
+</html>

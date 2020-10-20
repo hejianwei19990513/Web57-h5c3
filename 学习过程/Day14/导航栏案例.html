@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 767px) {
+            div {
+                width: 100%;
+            }
+
+            div ul {
+                width: 100%;
+                list-style: none;
+            }
+
+            ul li {
+                float: left;
+                width: 33.333%;
+                height: 30px;
+                background-color: #006d00;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            div {
+                width: 750px;
+                margin:auto;
+            }
+            .clearfix::after {
+                content: "";
+                display: block;
+                height: 0px;
+                clear: both;
+                visibility: hidden;
+            }
+            div ul {
+                width: 100%;
+                list-style: none;
+            }
+
+            ul li {
+                float: left;
+                width: 12.5%;
+                height: 30px;
+                background-color: #006d00;
+                color: white;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <ul class="clearfix">
+            <li>导航1</li>
+            <li>导航2</li>
+            <li>导航3</li>
+            <li>导航4</li>
+            <li>导航5</li>
+            <li>导航6</li>
+            <li>导航7</li>
+            <li>导航8</li>
+        </ul>
+    </div>
+</body>
+
+</html>

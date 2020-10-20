@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内边距（padding）</title>
+    <style>
+        div {
+            height: 300px;
+            width: 400px;
+            border: solid 1px blue;
+            /* 一个值代表上下，左右内边距都是这个值 */
+            padding: 20px;
+
+            /* 两个值依次代表上下，左右 */
+            padding: 20px 30px;
+
+            /* 三个值依次代表上，左右，下 */
+            padding: 20px 25px 30px;
+
+            /* 四个值分别代表上右下左（顺时针） */
+            padding: 20px 25px 30px 35px;
+            /* 如果已经设置了width和height，再设置padding会撑大盒子，此时需要用原本的宽度减去扩大的距离
+            此时是 宽width=400+2+25+35=462    高height=300+2+20+30=352；*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神</div>
+
+</body>
+
+</html>

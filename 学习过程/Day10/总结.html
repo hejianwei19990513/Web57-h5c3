@@ -1,0 +1,202 @@
+## 行内块使用时候的注意点
+
+```css
+span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: pink;
+}
+```
+
+```html
+<span>H</span>
+<span>E</span>
+<!-- 当行内块里面的内容为空的时候，对齐的时候会有问题 -->
+<!-- <span></span> -->
+<!-- 当行内块具备 overflow: hidden 样式的时候，对齐的时候会有问题 -->
+<span style=
+```
+
+## CSS 三角强化
+
+<!-- 画一个修长的直角三角 -->
+
+```css
+span {
+    margin: 100px auto 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent red transparent transparent;
+    border-style: solid;
+    border-width: 100px 50px 0 0;
+}
+```
+
+## CSS 初始化
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: azure;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+}
+
+img {
+    /* 去除底部缝隙 */
+    vertical-align: middle;
+}
+
+em,
+i {
+    font-style: normal;
+}
+```
+
+## 语义化标签
+
+- header，头部
+
+- nav，导航
+
+- main，主体内容区域
+
+- article
+
+- section，大区块
+
+- aside，侧边栏
+
+- footer，底部、页脚
+
+## 多媒体标签
+
+- video
+
+```html
+<!-- controls 播放控件 -->
+<!-- autoplay 自动播放，要配合 muted 静音去使用 -->
+<!-- loop 循环播放 -->
+<!-- poster 加载等待的画面图片 -->
+<video src="./test.mp4" controls></video>
+```
+
+```html
+<video controls>
+    <source src="./test.mp4" type="video/mp4"/>
+    <source src="./test.ogg" type="video/ogg"/>
+    您的浏览器不支持
+<video>
+```
+
+- audio
+
+## 新增的表单属性
+
+- required，必填
+
+```html
+<!-- 提交按钮一定要包在 form 标签里面进行测试 -->
+<!-- placeholder 仅仅是给用户的一个提示 -->
+<!-- value 指定的内容会提交到后台 -->
+<!-- autocomplete 使用的时候一定要配合 name 属性使用，点过提交之后，下次才会有记录 -->
+<form>
+    <input type="text" required autofocus placeholder="请输入内容" value="华为P30" name="user">
+    <input type="submit" value="提交">
+</form>
+```
+
+## 属性选择器
+
+```css
+/* 选中了 div，并且 div 要具备 title 属性，只要有就行 */
+/* div[title] {
+    color: red;
+} */
+/* 是 div，并且 title 要是 "hello ifer" */
+/* div[title="hello ifer"] {
+    color: pink;
+} */
+/* 是 div，并且 title 以 hello 开头 */
+/* div[title^=hello] {
+    color: red;
+} */
+/* $ 代表以 什么什么结尾 */
+/* div[title$=r] {
+    color: red;
+} */
+/* * 代表包含 */
+div[title*="lo"] {
+    color: green;
+}
+```
+
+```html
+<div title="hello world">内容1</div>
+<div title="hello ifer">内容1</div>
+```
+
+## 结构伪类选择器
+
+**nth-child()，括号可以三种情况**
+
+1. 可以写数字
+
+```css
+/* 先找 ul 里面的第三个孩子，并且这个孩子要是 li */
+ul li:nth-child(3) {}
+```
+
+2. 关键字，odd、even
+
+3. 简单的数学公式
+
+```css
+/* n 从 0 开始，找偶数行 */
+ul li:nth-child(2n) {}
+```
+
+```css
+/* 前 5 个，包括第 5 个，注意一定是 -n + 5，而不是 n - 5 */
+ul li:nth-child(-n + 5) {}
+```
+
+4. nth-of-type 和 nth-child 差异
+
+```css
+/* 先找 div 里面的第三个孩子，并且这个孩子要是 p */
+div p:nth-child(3) {}
+/* 先找 div 里面所有的 p，然后再所有的 p 里面找第 3 个 */
+div p:nth-of-type(3) {}
+```
+
+## 伪元素
+
+```css
+div::after {
+    /* 1. content 必写 */
+    content: "";
+    /* 2. 伪元素是行内的 */
+    /* 3. 应用场景：字体图标、只有一个空标签的情况、清除浮动 */
+}
+```

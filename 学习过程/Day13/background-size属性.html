@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            background: url(../../jjy.jpg) no-repeat;
+            background-color: pink;
+        }
+        .one {
+            /* background-size：100%;总是X轴100%铺满整个容器，Y轴可能被裁剪会出现空白填不满部分，图片不变形。 */
+            background-size: 100%;
+        }
+        .two {
+            /* 图片不保持比例放大或缩小使X轴与Y轴都铺满整个容器，图片可能会变形。 */
+            /* 百分比是父盒子的宽度高度百分比 */
+            background-size: 100% 100%; 
+        }
+        .thr {
+            /* 图片保持比例放大或缩小使X轴与Y轴都铺满整个容器，但图片超出容器部分会被裁剪掉，图片不变形。 */
+            background-size:cover;
+        }
+        .four {
+            /* 图片保持比例放大或缩小填充容器，若不能完整填充容器，X轴或Y轴都有可能出现白边，图片不变形。 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="thr"></div>
+    <div class="four"></div>
+</body>
+
+</html>

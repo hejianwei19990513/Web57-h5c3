@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="字体图标/style.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?m2mtle');
+            src: url('fonts/icomoon.eot?m2mtle#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?m2mtle') format('truetype'),
+                url('fonts/icomoon.woff?m2mtle') format('woff'),
+                url('fonts/icomoon.svg?m2mtle#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 100px;
+            overflow: hidden;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        li {
+            text-align: center;
+            line-height: 10px;
+            list-style: none;
+        }
+
+        span {
+            display: block;
+        }
+
+        div ul li:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid red;
+            border-right: 50px solid red;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid transparent;
+        }
+
+        div ul li:nth-child(1) span {
+            position: absolute;
+            top: -13px;
+            left: 21px;
+        }
+
+        div ul li:nth-child(2) {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid red;
+            border-right: 50px solid red;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid transparent;
+        }
+
+        div ul li:nth-child(2) span {
+            position: absolute;
+            top: -32px;
+            left: 3px;
+        }
+
+        div ul li:nth-child(3) {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid pink;
+            border-left: 50px solid pink;
+        }
+
+        div ul li:nth-child(3) span {
+            position: absolute;
+            top: -4px;
+            left: -34px;
+        }
+
+        div ul li:nth-child(4) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid pink;
+            border-left: 50px solid pink;
+        }
+
+        div ul li:nth-child(4) span {
+            position: absolute;
+            top: 19px;
+            left: -16px;
+        }
+
+        div ul li:nth-child(5) {
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid yellow;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid yellow;
+        }
+
+        div ul li:nth-child(5) span {
+            position: absolute;
+            top: -14px;
+            left: -31px;
+        }
+
+        div ul li:nth-child(6) {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid yellow;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid yellow;
+        }
+
+        div ul li:nth-child(6) span {
+            position: absolute;
+            top: -30px;
+            left: -16px;
+        }
+
+        div ul li:nth-child(7) {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid transparent;
+            border-right: 50px solid gray;
+            border-bottom: 50px solid gray;
+            border-left: 50px solid transparent;
+        }
+
+        div ul li:nth-child(7) span {
+            position: absolute;
+            top: -4px;
+            left: 23px;
+        }
+
+        div ul li:nth-child(8) {
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            width: 0;
+            height: 50px;
+            border: 50px solid red;
+            border-top: 50px solid transparent;
+            border-right: 50px solid gray;
+            border-bottom: 50px solid gray;
+            border-left: 50px solid transparent;
+        }
+
+        div ul li:nth-child(8) span {
+            position: absolute;
+            top: 19px;
+            left: 4px;
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        div {
+            animation: move 0.1s linear 0s infinite normal;
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        p {
+            display: block;
+            font-family: 'icomoon';
+            font-size: 50px;
+            color:blue;
+            z-index: 1;
+            position: absolute;
+            top: 9px;
+            left: 83px;
+        }
+
+        p:hover~div {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <div>
+        <ul>
+            <li><span>1</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>8</span></li>
+            <li><span>2</span></li>
+            <li><span>7</span></li>
+            <li><span>6</span></li>
+            <li><span>3</span></li>
+        </ul>
+    </div>
+</body>
+
+</html>

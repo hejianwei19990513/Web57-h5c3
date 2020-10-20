@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgb(243, 245, 247) ;
+}
+
+.one {
+    height:72px;
+    background-color: rgb(243, 245, 247);
+}
+
+#zong {
+    width: 1200px;
+    height: 42px;
+    margin: 30px 351.5px
+}
+
+#logo {
+    width: 198px;
+    height: 42px;
+    padding: 0px 0px 0px 0px ;
+    background-color:rgb(243, 245, 247);
+    margin: auto;
+    float: left;
+} 
+
+ul {
+    height: 0;
+}
+
+#two {
+    float: left;
+    margin-left: 60px;
+    width: 294px;
+    height: 42px;
+}
+
+#two li {
+    float: left;
+    list-style: none; 
+    width: 56px;
+    height: 42px;
+    margin: 0 15px;
+}
+
+#two li a {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+    background-color: rgb(243, 245, 247);
+}
+
+#two li a:hover {
+    color: #00a4fe;
+    border-bottom: 2px solid #00a4ff;
+}
+
+._one {
+    width: 92px;
+    height: 42px;
+    background-color: rgb(243, 245, 247);
+}
+
+.wei {
+    margin-left: 70px;
+    float: left;
+    width: 412px;
+    height: 42px;
+}
+
+input {
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+    float: left;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #101010 ;
+}
+
+button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background: url(img/btn.png);
+}
+
+ .two {
+    height: 421px;
+    background-color: #1c036c;
+ } 
+
+.two img {
+    margin-left: 102px;
+}
+
+.two .a {
+    width: 1200px;
+    height: 421px;
+    float: right;
+    margin-right: 351px;
+    background-image: url(../学成在线案例/img/banner2.png);
+}
+
+.two #a {
+    width: 190px;
+    height: 421px;
+    float: left;
+    background-color: #13014b;
+}
+
+.two #a a {
+    display:block;
+    height: 45px;
+    color: white;
+    font-size:14px ;
+    text-decoration: none;
+    line-height: 48px;
+    text-indent: 1.4em;
+}
+
+.two {
+    position: relative;
+}
+.niang {
+    float: left;
+}
+
+.niang:hover ~ .die  {
+    display: block;
+    position: absolute;
+    left: 250px;
+    
+    
+}
+
+.two .die {
+    position: absolute;
+    left: 250px;
+    display: none;
+    transition: .3s;
+}
+
+._tw {
+    float: right;
+    width: 80.97px;
+    height: 46px;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.a #b {
+    width: 230px;
+    height: 300px;
+    float: right;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.hjw{
+    color: white;
+    background-color: #9bceea;
+    width: 230px;
+    height: 48px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+}
+
+#hjw {
+    width: 230px;
+    height: 243px;
+}
+
+#hjw ul {
+    height: 198px;
+    width: 190px;
+    margin: 0px auto; 
+}
+
+#hjw li {
+    width: 190px;
+    height: 37px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+}
+
+#hjw h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+#hjw p {
+    margin: 0px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+#hjw a {
+    display:block; 
+    width: 188px;
+    height: 38px;
+    padding: 0px;
+    text-decoration: none;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+     font-size: 16px ;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.three {
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    background-color:white;
+    box-shadow:0px 2px 3px 3px rgba(0,0,0, 0.1) ;
+}
+
+.three h3 {
+    color:#00a4ff;
+    display: inline-block;
+    margin: 19px 0px; 
+    margin-left: 30px; 
+    font-size: 16px;
+}
+
+.three span {
+    margin: 0px 6.5px;
+    font-size: 17px;
+    color: #cccccc;
+}
+
+.three a {
+    display: inline-block;
+    text-decoration: none;
+    color: #050555;
+    font-size: 16px;
+}
+
+#niubi {
+    float: right;margin: 20px 0px;
+    font-size: 14px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #00a4ff;
+}
+
+.four {
+    width: 1200px;
+    height: 45px;
+    margin:auto;
+    margin-top: 20px;
+    background-color:rgb(243, 245, 247);
+}
+
+.four h3 {
+    height: 10px;
+    margin-top: 30px;
+    font-size: 20px;color: #494949;
+}
+
+.five {
+    width: 1225px;
+    height: 570px;
+    margin:0px 351.5px;
+    background-color:rgb(243, 245, 247);
+}
+
+li {
+    width: 228px;
+    height: 270px;
+    background-color: white;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.five li {
+    position: relative;
+}
+
+.five li .ma {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.three {
+    margin-bottom: 20px;
+}
+
+.five p {
+    margin: 20px;
+    font-size: 14px;
+    margin-left:  25px;
+}
+
+.m {
+    font-size: 10px;
+    color: rgb(165, 165, 165);
+    margin-bottom: 10px;
+}
+.s {
+    color: #ff7c2d;
+    font-size: 10px;
+}
+
+.four a {
+    display:block;
+    text-align: right;
+    padding-right: 30px;
+    text-decoration: none;
+    float: right;
+}
+
+.he {
+    float: left;
+}
+
+.six {
+    height: 415px;
+}
+
+.six{
+    background-color: white;
+}
+
+.p{
+    width: 1200px;
+    height: 415px;
+    margin: auto;
+}
+
+.k {
+    height: 35px;
+}
+
+.g {
+    width: 432px;
+    height: 32px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.p .v{
+    color:rgb(102, 102, 102);
+    font-size: 12px;
+    margin: 20px 0px 15px 0px;
+}
+
+#d a {
+    border:1px solid #00a4ff;
+    line-height: 33px;
+    text-align: center;
+    width: 118px;
+    height:33px;
+    text-decoration: none;
+    display: block;
+}
+
+#d {
+    float: left;
+}
+
+#z {
+    float: right;
+}
+
+dt {
+    display: block;
+}
+
+.b {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.jian {
+    float: left;
+    margin-left: 100px;
+} 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .row div {
+            border: 1px solid red;
+        }
+        .row .col-lg-3 .row .col-sm-6{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- 嵌套里面再加个row盒子可以取消外面父盒子的padding值 -->
+                <div class="row">
+                    <div class="col-sm-6">a</div>
+                    <div class="col-sm-6">b</div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+                                          
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-4">4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

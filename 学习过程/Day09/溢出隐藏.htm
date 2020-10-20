@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出隐藏（行内元素无效）</title>
+    <style>
+        div {
+            width: 200px;
+            border: 1px solid pink;
+
+            /* 不要换行 */
+            white-space: nowrap;
+            /* overflow隐藏溢出文字 */
+            overflow: hidden;
+
+            /* 省略号 */
+            text-overflow: ellipsis;
+
+
+        }
+        /* div {
+            /* 强制换行 ，用于纯英文字母和纯数字 */
+            /* word-break: break-all; */
+        /* } */ 
+    </style>
+</head>
+<body>
+    <div>小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神小鞠女神</div>
+</body>
+</html>

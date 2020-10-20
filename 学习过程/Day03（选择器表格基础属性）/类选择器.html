@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+<style>
+    .one {
+        color: lightcoral;
+        font-size: 30px;
+    }
+
+    .two {
+        color: crimson;
+        font-size: 30px;
+    }
+
+    .three {
+        color: darkturquoise;
+        font-size: 30px;
+    }
+
+    div {
+        color: deeppink;
+        font-size: 30px;
+    }
+
+    span {
+        color: pink;
+        font-size: 30px;
+    }
+
+    span {
+        color: deepskyblue;
+        font-size: 30px;
+    }
+    /* span样式被层叠，因此只显示deepskyblue颜色 */
+</style>
+</head>
+<body>
+    <div class="one">小鞠仙女</div>
+    <div class="two">小鞠仙女</div>
+    <div class="three">小鞠仙女</div>
+    <div>小鞠仙女</div>
+    <div>小鞠仙女</div>
+    <div>小鞠仙女</div>
+    <span>小鞠仙女</span>
+    <span>小鞠仙女</span>
+    <span>小鞠仙女</span>
+    <span>小鞠仙女</span>
+    <div class="one">
+        <ul>
+            <li><a href="javascript:;">小鞠女神</a>1</li>
+            <li><a href="javascript:;">小鞠女神</a></li>
+            <li><a href="javascript:;">小鞠女神</a></li>
+            <li><a href="javascript:;">小鞠女神</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

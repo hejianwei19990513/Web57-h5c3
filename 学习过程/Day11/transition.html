@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 20px;
+            background-color: red;
+
+            /* transition:变化属性 完成特效需要的时间 变化趋势 开始变化延迟时间 
+                作用在谁身上给谁。如果作用在hover后面的子元素或者兄弟元素，那么transition写在hover后面的元素里面*/
+            transition: background-color 2.5s ease-in-out 0.5s;
+        }
+        div:hover {
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

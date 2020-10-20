@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相邻块元素垂直外边距的合并</title>
+    <style>
+        .one {width: 400px;
+        height: 300px;
+        border: red 1px solid;
+        margin-bottom: 100px;
+        }
+        .two {width: 400px;
+        height: 300px;
+        border: red 1px solid;
+        margin-top: 200px;
+        }
+        /* 第一个div下外边距是100，第二个div上外边距是200，此时div之间的间距是200，不是300， */
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    
+</body>
+</html>

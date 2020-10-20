@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .row div {
+            border: 1px solid red;
+        }
+        .container .row:first-child {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 当一行加起来刚好12份时刚好填满宽度 -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+
+        <!-- 当一行加起来大于12份时，多余的一个另起一行 -->
+        <div class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-4">4</div>
+        </div>
+
+        <!-- 当一行加起来小于12份时，则不会填满宽度，会有空白 -->
+        <div class="row">
+            <div class="col-lg-3">1</div>
+            <div class="col-lg-3">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

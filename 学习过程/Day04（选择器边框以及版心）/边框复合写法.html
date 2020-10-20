@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框复合写法</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px green solid;
+        }
+
+        .one {
+            width: 500px;
+            height: 500px;
+            /* 上边框 */
+            border-top: dotted 2px red;
+            /* 下边框 */
+            border-bottom: dotted 2px yellow;
+            /* 左边框 */
+            border-left: blue 2px dotted;
+            /* 右边框 */
+            border-right: brown 2px dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <br>
+    <div class="one"></div>
+
+</body>
+
+</html>

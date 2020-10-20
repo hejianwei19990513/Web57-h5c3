@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择有括号里面属性的div元素 */
+        div[width] {
+            color: red;
+        }
+
+        /* 选择有括号里面属性=属性值的div元素 */
+        div[class=one] {
+            color: pink;
+        }
+
+        /* 选择有括号里面属性值且以所需属性值开头的div元素 */
+        div[class^=one] {
+            color: brown;
+        }
+
+        /* 选择有括号里面属性值且以所需属性值结尾的div元素 */
+        div[class$=one] {
+            color: yellow;
+        }
+
+        /* 选择有括号里面属性值且包含属性值就行的div元素 */
+        div[class*=one] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>小鞠女神</div>
+    <div class="" width="100">小鞠女神(含有width)</div>
+    <div class="one">小鞠女神(以one属性值开头)</div>
+    <div class="one1">小鞠女神（以one属性值结尾）</div>
+    <div class="number_one_">小鞠女神（包含one属性值）</div>
+    <div class="">小鞠女神</div>
+    
+</body>
+</html>

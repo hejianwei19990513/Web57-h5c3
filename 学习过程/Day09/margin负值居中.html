@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .wrap {
+        margin: 100px auto 0;
+        /* 这里减去了多出来的那个 margin-right */
+        width: 540px;
+        /* overflow: hidden; */
+    }
+    .list {
+        /* width: 550px; */
+        /* 把上面的 550px 换成了 margin-right: -10px，更灵活 */
+        margin-right: -10px;
+        overflow: hidden;
+        background-color: red;
+        z-index: 1;
+    }
+    .list li {
+        color: #fff;
+        font-size: 50px;
+        background-color: pink;
+        list-style: none;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin-right: 10px;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+</html>

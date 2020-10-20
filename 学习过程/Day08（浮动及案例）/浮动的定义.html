@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .two {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .three {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 两种情况：
+        1.如果第一个div是标准盒子，第二个div是一个浮动盒子，那么第一个div标准盒子就会独占一行，第二行才开始浮动 
+        2.如果第一个div是一个或多个浮动盒子，第二个div是标准盒子，第二个div标准盒子会和第一个浮动盒子在同一行 -->
+    <div class="three">浮动盒子</div>
+    <div class="three">浮动盒子</div>
+    <div class="one">标准盒子</div>
+    
+    <div class="two">浮动盒子</div>
+    <div class="two">浮动盒子</div>
+    <div class="two">浮动盒子</div>
+    <div class="two">浮动盒子</div>
+
+    <div class="one">标准盒子</div>
+    <div class="three">浮动盒子</div> 
+
+
+</body>
+
+</html>

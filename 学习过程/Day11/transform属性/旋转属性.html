@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            position: absolute;
+            top: calc(50% - 100px);
+            left:calc(50% - 100px) ;
+            overflow: hidden;
+        }
+        .box::after {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-image: url(../../../jjy.jpg);
+            color: white;
+            text-align: center;
+            line-height: 200px;
+
+            /* 旋转中心点：1可以写像素 2可以写方位名词 3可以写百分比 */
+            transform-origin: left bottom;
+
+            /* 旋转角度：顺时针是正值，逆时针是负值 */
+            transform: rotate(90deg);
+
+            transition: 1s;
+            z-index: 1;
+        }
+        .box:hover::after {
+            display: block;
+            transform: rotate(0deg);
+            top: 0px;
+        } 
+    </style>
+</head>
+<body>
+        <div class="box">此处有图</div>
+        
+</body>
+</html>

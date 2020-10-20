@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 800px;
+        }
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+            border-radius: 150px;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+        .word,
+        .pic {
+            position: absolute;
+            
+        }
+        .word {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 150px;
+        }
+        .pic {
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            overflow: hidden;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="word">小鞠女神</div>
+        <div class="pic">
+            <img src="../../../红衣女神.jpg" alt="" width="300" height="300">
+        </div>
+    </div>
+</body>
+</html>

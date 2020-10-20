@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单2</title>
+</head>
+
+<body>
+    <form action="">
+    <table width="500" height="120" align="center">
+        <caption>
+            <h2>欢迎来到修改页面</h2>
+        </caption>
+        <tr>
+            <td width="120">姓名：</td>
+            <td><input type="text" placeholder="jack"></td>
+        </tr>
+        <tr>
+            <td width="120">性别</td>
+            <!-- input中type="radio"是选中圆圈（不可撤回）type="checkbox"也是选中圆圈（可以撤回） -->
+            <td><input type="radio" name="sex">女士<input type="radio" name="sex">男士</td>
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td>
+                <!-- 表单中select标签的用法 -->
+                <select>
+                    <!-- 在option里面加selected="selected"是默认选项 -->
+                    <option selected="selected">幼儿园</option>
+                    <option>小学</option>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option>大学</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>个人描述：</td>
+            <!-- textarea是外面显示一个长方形字框 -->
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">不要公开我的个人信息</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>保存</button>&nbsp;<input type="reset"></td>
+
+        </tr>
+    </table>
+</form>
+
+</body>
+
+</html>

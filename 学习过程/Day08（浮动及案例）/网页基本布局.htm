@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页基本布局</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .one {
+            height: 100px;
+            background-color: gray;
+        }
+
+        .two {
+            margin: 10px auto;
+            width: 900px;
+            height: 150px;
+            background-color: gray
+        }
+
+        .three {
+            width: 900px;
+            height: 150px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+
+        .four {
+            height: 100px;
+            background-color: gray
+        }
+
+        .three li {
+            width: 210px;
+            height: 150px;
+            background-color: red;
+            margin-right: 20px;
+            list-style: none;
+            display: inline-block;
+        }
+
+        .three .s {
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three">
+        <ul style="font-size:0">
+            <!-- 因为ul有空白字符，所以用fz=0消除这些字符，但这样也会使里面的字显示不出来 -->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="s"></li>
+        </ul>
+    </div>
+    <div class="four"></div>
+
+</body>
+
+</html>

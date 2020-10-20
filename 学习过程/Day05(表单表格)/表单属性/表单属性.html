@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单格式</title>
+    <!-- 一个完整的表单由表单域，表单元素和提示信息组成 -->
+    <!-- vaule和name是提交后台数据 -->
+</head>
+
+<body>
+    <!-- 定义表单域 -->
+    <form action="url地址" method="提交方式" name="表单域名称"></form>
+    <!-- input输入表单元素 -->
+    <div>
+        <!-- checkbox定义复选框（可以实现多选） -->
+        <input type="checkbox">小鞠
+        <input type="checkbox">郑爽
+        <br>
+        <br>
+        <br>
+
+        <!-- file定义输入字段及"浏览"按钮，共文件上传 -->
+        <input type="file">小鞠
+        <br>
+        <br>
+        <br>
+
+        <!-- hidden定义隐藏的输入字段(把hidden改成text即可看到效果) -->
+        <input type="hidden" value="1234">小鞠
+        <br>
+        <br>
+        <br>
+
+        <!-- image定义图片形式的提交按钮 -->
+        <div><input type="image" src="../../Day03/女神剧照（作业）/新白娘子传奇/新白娘子传奇3.jpg">小鞠</div>
+        <br>
+        <br>
+        <br>
+
+        <!-- password定义密码字段，该字段中的字符被掩饰 -->
+        <input type="password">小鞠
+        <br>
+        <br>
+        <br>
+
+        <!-- radio定义单选按钮,可以实现多选一(name定义表单元素名称，这样才能实现多选一) -->
+        <input type="radio" name="mingxing">小鞠
+        <input type="radio" name="mingxing">郑爽
+        <br>
+        <br>
+        <br>
+
+        <!-- reset定义重置按钮，清除表单所有数据 -->
+        <form action=""><input type="reset">
+            <input type="text"></form>
+        <br>
+        <br>
+        <br>
+
+        <!-- submit定义提交按钮，将表单发送到后台服务器 -->
+        <input type="submit" name="mingx" value="1234">小鞠
+        <br>
+        <br>
+        <br>
+
+        <!-- text输入的字符（默认最大20字符）-->
+        <input type="text" value="">小鞠
+        <br>
+        <br>
+        <br>
+        <!-- value输入的值 -->
+        <input type="text" value="小鞠女神">
+        <br>
+        <br>
+        <br>
+        <!-- name表单元素的名字（单选框和复选框要相同的名字） -->
+        <input type="text" name="小鞠">
+        <br>
+        <br>
+        <br>
+        <!-- checked默认单选和复选框打勾 -->
+        <input type="radio" checked>小鞠
+        <input type="checkbox" checked>小鞠
+        <br>
+        <br>
+        <br>
+        <!-- maxlength在表单中的输入字符最大长度（默认20字符） -->
+        <input type="text" maxlength="30">
+        <br>
+        <br>
+        <br>
+        <!-- lable可以选中单选框和复选框文本（也会选中和取消） -->
+        <label for="one">小鞠</label>
+        <input type="checkbox" id="one">
+        <br>
+        <br>
+        <br>
+        <!-- button点击按钮，js启动的脚本 -->
+        <button>确定</button>
+        <br>
+        <br>
+        <br>
+        <!-- select下拉列表选择表单元素 -->
+        <select>
+            <!-- 在option里面加selected="selected"是默认选项 -->
+            <option selected="selected">幼儿园</option>
+            <option>小学</option>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <!-- textarea是外面显示一个长方形字框（例如留言框） -->
+        <textarea></textarea>
+        <br>
+        <br>
+        <br>
+        <!--  -->
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

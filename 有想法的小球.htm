@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有想法的小球</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 800px;
+            height: 50px;
+            border: 1px solid gray;
+            position: relative;
+            left: 650px;
+            top: 100px;
+        }
+
+        .out {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 1px solid gray;
+            margin: 500px 500px;
+            position: relative;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+        }
+
+        .in {
+            width: 200px;
+            height: 100px;
+            border: 1px solid gray;
+            position: absolute;
+            top: 100px;
+            border-top: 0px;
+            
+        }
+        .qiu {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            border-radius: 50px;
+            position: absolute;
+            top: -100px;
+            right: 0;
+            animation: move 8s linear infinite alternate;
+        }
+        @keyframes move {
+            25% {
+                transform: translateX(-800px);
+                background-color: pink;
+            }
+            50% {
+                transform: translate(-800px,650px);
+                background-color: red;
+            }
+            75% {
+                transform: translateX(-800px);
+                background-color: blue;
+            }
+            100% {
+                transform: translateX(0px);
+                background-color:skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="qiu"></div>
+    </div>
+
+    <div class="out">
+        <div class="in"></div>
+    </div>
+</body>
+
+</html>

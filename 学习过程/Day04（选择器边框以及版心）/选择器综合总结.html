@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器综合总结</title>
+    <style>
+        /* 后代选择器选择后代中的一个特定的标签，该标签全部都可以作用 (a标签除外，因为 a标签有自己的颜色样式)*/
+        div b {
+            color: green;
+        }
+
+        /* 子代选择器只选择子代 */
+        div>b {
+            color: yellow;
+        }
+
+        /* div>b:hover{color: red;} */
+        div b:hover {
+            color: red;
+        }
+
+        /* b:hover
+        a:hover{color: red;} */
+        b {
+            text-align: center;
+        }
+
+        /* (不能随便用标签，文本居中标签只能用于容器之类的标签文本居中) */
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <b>儿子</b>
+        <b>儿子</b>
+        <b>儿子</b>
+        <p>
+            <b>孙子</b>
+            <b>孙子</b>
+            <b>孙子</b>
+        </p>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <!-- 特殊的a标签不作用 -->
+        <b><a href="javascript:;">曾孙子</a></b>
+        <b><a href="javascript:;">曾孙子</a></b>
+        <b><a href="javascript:;">曾孙子</a></b>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover box1让box1后面的一个（不是多个）兄弟为box2的变红 */
+        .box1:hover+.box2 {
+            color: red;
+        }
+
+        /* hover box3让box3后面的所有兄弟为box4的变红 */
+        .box3:hover~.box4 {
+            color: blue;
+        }
+
+        /* hover box5让他的第一代子代边框变红（不给字体是因为字体有继承性） */
+        .box5:hover>div {
+            border: 1px solid red;
+        }
+
+        /* hover box6让他的所有后代边框变红 */
+        .box6:hover div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">小鞠女神</div>
+    <div class="box2">小鞠女神</div>
+    <div class="box2">小鞠女神</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box3">小鞠女神</div>
+    <div class="box4">小鞠女神</div>
+    <div class="box4">小鞠女神</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box5">
+        <div>
+            小鞠女神
+            <div>小鞠女神</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box6">
+        <div>
+            小鞠女神
+            <div>小鞠女神</div>
+        </div>
+    </div>
+</body>
+</html>

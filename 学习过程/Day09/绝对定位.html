@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 400px;
+
+            /* 父亲大部分用绝对定位 */
+            position: relative;
+            top: 400px;
+            left: 200px;
+            background-color: red;
+        }
+
+        .two {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            /* 绝对定位，以最近的父元素为参照物，移动相应的距离 */
+            position: absolute;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

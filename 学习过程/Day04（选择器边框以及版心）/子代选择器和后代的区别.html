@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器和后代的区别</title>
+    <style>
+        /* 后代选择器选择后代中的一个特定的标签，该标签全部都可以作用 (a标签除外，因为 a标签有自己的颜色样式)*/
+        div b {
+            color: red;
+        }
+
+        /* 子代选择器只选择子代 */
+        div>b {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <b>儿子</b>
+        <b>儿子</b>
+        <b>儿子</b>
+        <p>
+            <b>孙子</b>
+            <b>孙子</b>
+            <b>孙子</b>
+        </p>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <b>
+            <p>曾孙子</p>
+        </b>
+        <!-- 特殊的a标签不作用 -->
+        <b><a href="javascript:;">曾孙子</a></b>
+        <b><a href="javascript:;">曾孙子</a></b>
+        <b><a href="javascript:;">曾孙子</a></b>
+    </div>
+
+
+</body>
+
+</html>
